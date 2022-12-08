@@ -40,7 +40,7 @@ export const message0: MessageType = {
         name: 'Bread',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'Hello, she didn’t do anything and rested all day, how are you?', // можно менять
         time: '22:00', // можно менять
     },
 }
