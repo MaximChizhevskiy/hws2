@@ -1,6 +1,7 @@
 .sendForm {
     border: solid green;
-
+    display: flex;
+    border: solid black;
 }
 
 .textarea {
