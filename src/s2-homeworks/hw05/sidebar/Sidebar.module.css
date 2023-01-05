@@ -1,22 +1,29 @@
 .sidebar {
+
 }
 
 .sidebar.open {
+
 }
 
 .background {
 }
 
 .nav {
+
 }
 
 .nav a {
+
 }
 
 .nav a:hover {
+    font-weight: bolder;
 }
 
 .nav a.active {
+color: blueviolet;
+
 }
 .close {
 }
