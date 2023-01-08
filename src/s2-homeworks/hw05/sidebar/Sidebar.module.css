@@ -4,29 +4,40 @@
 
 .sidebar.open {
 
+
 }
 
 .background {
+
 }
 
 .nav {
+    margin: 10px;
 
 }
 
 .nav a {
 
+    text-decoration: none;
+
 }
 
 .nav a:hover {
     font-weight: bolder;
+
+
 }
 
 .nav a.active {
-color: blueviolet;
-
+    color: orangered;
 }
+
 .close {
+
 }
 
 .close img {
+
 }
+
+
