@@ -15,7 +15,8 @@ import {Loader} from './Loader'
 
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
-    const isLoading = useSelector<AppStoreType, boolean>((state) => state.loading.isLoading)
+
+    const isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
     const dispatch = useDispatch()
 
 
@@ -24,7 +25,9 @@ const HW10 = () => {
         dispatch(action)
 
         // setTimeout
-        setTimeout(()=>{dispatch(loadingAC(false))}, 1500)
+        setTimeout(() => {
+            dispatch(loadingAC(false))
+        }, 1500)
 
     }
 
