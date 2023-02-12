@@ -5,7 +5,6 @@ import {loadingAC} from './bll/loadingReducer'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import s2 from '../../s1-main/App.module.css'
 import {Loader} from './Loader'
-import {isBooleanObject} from "util/types";
 
 /*
 * 1 - в файле loadingReducer.ts дописать типы и логику
@@ -16,7 +15,7 @@ import {isBooleanObject} from "util/types";
 
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
-    useSelector<AppStoreType, {isLoading: boolean}>(state => state.loading)
+    useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
     const dispatch = useDispatch()
     const isLoading = false
 
