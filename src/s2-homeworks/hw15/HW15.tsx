@@ -29,13 +29,13 @@ type ParamsType = {
 
 const getTechs = (params: ParamsType) => {
     return axios
-        .get<{ techs: TechType[], totalCount: number }>(
-            'https://samurai.it-incubator.io/api/3.0/homework/test3',
-            {params}
-        )
-        .catch((e) => {
-            alert(e.response?.data?.errorText || e.message)
-        })
+    .get<{ techs: TechType[], totalCount: number }>(
+        'https://samurai.it-incubator.io/api/3.0/homework/test3',
+        {params}
+    )
+    .catch((e) => {
+        alert(e.response?.data?.errorText || e.message)
+    })
 }
 
 const HW15 = () => {
@@ -51,19 +51,19 @@ const HW15 = () => {
         setLoading(true)
 
         getTechs(params)
-            .then((res) => {
-                // делает студент
-                if(res) {
-                    setTechs(res.data.techs);
-                    setTotalCount(res.data.totalCount)
+        .then((res) => {
+            // делает студент
+            if(res) {
+                setTechs(res.data.techs);
+                setTotalCount(res.data.totalCount)
 
-                }
+            }
 
-                setLoading(false)
-                // сохранить пришедшие данные
+            setLoading(false)
+            // сохранить пришедшие данные
 
-                //
-            })
+            //
+        })
 
     }
 
